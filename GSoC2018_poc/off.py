@@ -22,6 +22,7 @@ class imgSeg(object):
 		return imgs_train, imgs_mask_train, imgs_test
 
 	#Define the model
+	#initialized 10 convolution layers and 4 pooling layers
 	def get_segment(self):
 
 		inputs = Input((self.img_rows, self.img_cols,1))
